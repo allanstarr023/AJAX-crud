@@ -88,13 +88,13 @@ $(".crud-submit").click(function(e){
             dataType: 'json',
             type:'POST',
             //url: url + form_action,
-			url: url + 'demo/api/create.php', //This is for localhost testing
-			url: url + 'api/create.php',
+	    //url: url + 'demo/api/create.php', //This is for localhost testing
+	    url: url + 'api/create.php',
             data:{title:title, description:description}
         }).done(function(data){
             $("#create-item").find("input[name='title']").val('');
             $("#create-item").find("textarea[name='description']").val('');
-            //getPageData();
+            getPageData();
             $(".modal").modal('hide');
 			
 			var	rows = '';
@@ -129,7 +129,7 @@ $("body").on("click",".remove-item",function(){
         dataType: 'json',
         type:'POST',
         //url: url + 'demo/api/delete.php',  //This is for localhost testing
-		url: url + 'api/delete.php', 
+	url: url + 'api/delete.php', 
         data:{id:id}
     }).done(function(data){
         c_obj.remove();
@@ -144,11 +144,9 @@ $("body").on("click",".remove-item",function(){
 /* Edit Item */
 $("body").on("click",".edit-item",function(){
 
-
     var id = $(this).parent("td").data('id');
     var title = $(this).parent("td").prev("td").prev("td").text();
     var description = $(this).parent("td").prev("td").text();
-
 
     $("#edit-item").find("input[name='title']").val(title);
     $("#edit-item").find("textarea[name='description']").val(description);
@@ -189,12 +187,12 @@ $(".crud-submit-edit").click(function(e){
             dataType: 'json',
             type:'POST',
             //url: url + form_action,
-			//url: url + 'demo/api/update.php', //This is for localhost testing
-			url: url + 'api/update.php',
+	    //url: url + 'demo/api/update.php', //This is for localhost testing
+	    url: url + 'api/update.php',
             data:{title:title, description:description, id:id}
         }).done(function(data){
-			/* console.log(data);
-            getPageData(); */
+	    /* console.log(data);*/
+            getPageData(); 
             $(".modal").modal('hide');
             toastr.success('Item Updated Successfully.', 'Success Alert', {timeOut: 5000});
         }); 
