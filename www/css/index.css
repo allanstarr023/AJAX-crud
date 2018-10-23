@@ -1,0 +1,95 @@
+body {
+	padding-top: 40px;
+}
+
+/*MENU BAR TO ALWAYS REMAIN COLLAPSED */
+.navbar.always-open .navbar-header {
+  float: none;
+}
+/*Makes menu icon visible*/
+.navbar.always-open .navbar-toggle {
+  display: block;
+}
+.navbar.always-open .navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar.always-open .navbar-nav>li {
+  float: none;
+}
+/*END OF MENU BAR STYLING*/
+
+.fa {
+	font-size: 60px;
+	color: #42a4f4;
+}
+
+.thumbnail {
+	width: 100%;
+}
+
+.spacer {
+	margin-top: 10px;
+}
+
+/*style of content background for front page of app*/
+.well-bg-color {
+	background-color: #4c4a4a;
+}
+
+.well-bg-color p, .well-bg-color h3{
+	color: #ffffff;
+}
+
+/*Accordion styling for Doctrines*/
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+/* Remove underline link from <a> on hover */
+/*a:hover {
+text-decoration: none;
+}*/
+
+/*RSS FEED STYLE*/
+.testerrr {
+    background-color: yellowgreen;
+}
+
+.rssFeed {
+	color: lavenderblush;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+a:hover {
+	text-decoration: none;
+}
+.rssUL {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.rssList{
+	padding: 10px;
+	border-top: 1px solid #AAA;
+	/*background-color: #EFEFEF;*/
+}
+li:first-child{
+	
+}
+.rssUL li:nth-child(2n){
+	background-color: white;
+}
+
+.announcementHeader {
+	color:royalblue;
+}

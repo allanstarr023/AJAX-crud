@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="../css/themes/bootstrap.min.united.css" />
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <title>Arima SDA Mobile</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top always-open">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">Arima SDA Mobile App</a>
+		</div>
+
+		<div class="collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li><a href="../index.html">Home </a></li>
+			<li><a href="announcements.html">Announcements</a></li>
+			<li><a href="sabbath-school.html">Sabbath School</a></li>
+			<li class="active"><a href="beliefs.html">Beliefs <span class="sr-only">(current)</span></a></li>
+			<li><a href="about-us.html">About Us</a></li>
+			<li><a href="contact-us.html">Contact Us</a></li>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Departments <span class="caret"></span></a>
+			  <ul class="dropdown-menu" role="menu">
+				<li><a href="adventist-youth.html">Adventist Youth</a></li>
+				<li><a href="mens-ministry.html">Mens Ministry</a></li>
+				<li><a href="womens-ministry.html">Womens Ministry</a></li>
+				<li><a href="personal-ministry.html">Personal Ministry</a></li>
+				<li><a href="family-life.html">Family Life</a></li>
+				<li><a href="childrens-department.html">Childrens Department</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		  <form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		  </form>
+		</div>
+	  </div>
+	</nav>
+	
+    <div class="container text-center">
+		<h1>Fundamental Beliefs</h1>
+		<p class="lead">Take a read of our unique beliefs</p>
+		<div class="row">
+			<div class="col-md4">
+				<div class="well">
+					<img class="thumbnail" src="../img/our-church-rect.png">
+					<h3>Doctrine of GOD</h3>
+					<p>Ancient and timeless, a masterpiece of literature, the Holy Bible reveals God’s role in human history, our place in God’s plan, and truth to guide us and shield us from deception. There are 5 doctrines in this category</p>
+					<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#doctrine-of-god">Read More</a>
+				</div>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-md4">
+				<div class="well">
+					<img class="thumbnail" src="../img/our-church-rect.png">
+					<h3>Doctrine of Humanity</h3>
+					<p>Once molded in God’s image, now fractured by sin, it took a perfect Savior to reconcile us. The Spirit restores God’s reflection within us so God can work through us.  There are 2 doctrines in this category</p>
+					<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#doctrine-of-humanity">Read More</a>
+				</div>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-md4">
+				<div class="well">
+					<img class="thumbnail" src="../img/our-church-rect.png">
+					<h3>Doctrine of the Church</h3>
+					<p>The church is God’s family on Earth, serving, celebrating, studying and worshiping together. Looking to Jesus as its leader and Redeemer, the church is called to take the good news of salvation to all. There are 7 doctrines in this category</p>
+					<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#doctrine-of-church">Read More</a>
+				</div>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-md4">
+				<div class="well">
+					<img class="thumbnail" src="../img/our-church-rect.png">
+					<h3>Doctrine of the Christian Life</h3>
+					<p>God calls us to live in light of His grace, knowing the infinite cost God paid to save us. Through the Spirit we glorify God in our minds, bodies and spirits. God entrusts us with responsibility for ourselves, our world, our fellow humans, and our material resources. God blesses our efforts as we live for Him</p>
+					<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#doctrine-of-christian-life">Read More</a>
+				</div>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-md4">
+				<div class="well">
+					<img class="thumbnail" src="../img/our-church-rect.png">
+					<h3>Doctrine of Last Day Events</h3>
+					<p>We look forward to Jesus’ promised return, when He will resurrect His saved children and take them to heaven. Though we cannot know exactly when He will come back, we can live in joyful anticipation.</p>
+					<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#doctrine-of-last-day-events">Read More</a>
+				</div>
+			</div>			
+		</div>
+		
+		 <!-- MODAL SCREENS BEGIN HERE -->		
+		 <!-- START OF DOCTRINE of GOD MODAL -->
+		 <div class="modal" id="doctrine-of-god" style="margin-top:0px;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-title">DOCTRINE OF GOD</h3>
+			  </div>
+			  <div class="modal-body">
+				<!-- DOCTRINE of GOD CONTENT-->
+				 <div class="panel-group" id="accordion">
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					<div class="panel-heading" data-toggle="tooltip" title="Click to view content">
+					  <h4 class="panel-title">
+						<a>
+						  HOLY SCRIPTURES
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  THE TRINITY
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  GOD - THE FATHER
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  GOD - THE SON
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseFour" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  GOD - THE HOLY SPIRIT
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseFive" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>  
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div> <!-- END OF DOCTRINE of GOD MODAL -->
+
+		 <!-- DOCTRINE of HUMANITY MODAL -->
+		 <div class="modal" id="doctrine-of-humanity" style="margin-top:0px;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-title">DOCTRINE OF HUMANITY</h3>
+			  </div>
+			  <div class="modal-body">
+				<!-- DOCTRINE of GOD HUMANITY-->
+				 <div class="panel-group" id="accordion">
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-creation">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  CREATION
+						</a>
+					  </h4>
+					</div>
+					<div id="collapse-creation" class="panel-collapse collapse in">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseMan">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  NATURE OF MAN
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseMan" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div> <!-- END OF DOCTRINE of HUMANITY MODAL -->
+		 <!-- START OF DOCTRINE of the CHURCH MODAL -->
+		 <div class="modal" id="doctrine-of-church" style="margin-top:0px;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-title">DOCTRINE OF HUMANITY</h3>
+			  </div>
+			  <div class="modal-body">
+				<!-- DOCTRINE of the CHURCH-->
+				 <div class="panel-group" id="accordion">
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-church">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  THE CHURCH
+						</a>
+					  </h4>
+					</div>
+					<div id="collapse-church" class="panel-collapse collapse in">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseRemnant">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  REMNANT AND ITS MISSION
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseRemnant" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseUnity">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  UNITY IN BODY OF CHRIST
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseUnity" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseBaptism">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  BAPTISM
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseBaptism" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseLordsSupper">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  THE LORDS SUPPER
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseLordsSupper" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseProphecy">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  GIFT OF PROPHECY
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseProphecy" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>				  
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSpiritualGifts">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  SPIRITUAL GIFTS AND MINISTRIES
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseSpiritualGifts" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div> <!-- END OF DOCTRINE of the CHURCH MODAL -->
+		 <!-- START OF DOCTRINE of CHRISTIAN LIFE -->
+		 <div class="modal" id="doctrine-of-christian-life" style="margin-top:0px;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-title">DOCTRINE OF GOD</h3>
+			  </div>
+			  <div class="modal-body">
+				<!-- DOCTRINE of GOD CONTENT-->
+				 <div class="panel-group" id="accordion">
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseLaw">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  LAW OF GOD
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseLaw" class="panel-collapse collapse in">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSabbath">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  SABBATH
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseSabbath" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseBehavior">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  CHRISTIAN BEHAVIOR
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseBehavior" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseStewardship">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  STEWARDSHIP
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseStewardship" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseMarriage">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  MARRIAGE AND THE FAMILY
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseMarriage" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>  
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div> <!-- END OF DOCTRINE of CHRISTIAN LIFE MODAL -->
+		 <!-- START OF DOCTRINE of LAST DAY EVENTS MODAL -->
+		 <div class="modal" id="doctrine-of-last-day-events" style="margin-top:0px;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-title">DOCTRINE OF GOD</h3>
+			  </div>
+			  <div class="modal-body">
+				<!-- DOCTRINE of GOD CONTENT-->
+				 <div class="panel-group" id="accordion">
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSanctuary">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  CHRIST MINISTRY IN THE SANCTUARY
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseSanctuary" class="panel-collapse collapse in">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSecondComing">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  THE SECOND COMING OF CHRIST
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseSecondComing" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseDeath">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  DEATH AND RESSURECTION
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseDeath" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEndSin">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  THE MILLENNIUM AND END OF SIN
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseEndSin" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-primary accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNewEarth">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a>
+						  THE NEW EARTH
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseNewEarth" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>  
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div> <!-- END OF DOCTRINE of LAST DAY EVENTS MODAL -->		
+		
+    </div>
+	<footer><p class="text-center">Copyright &copy; 2018, ARIMA SDA INC</p></footer>
+    <script type="text/javascript" src="../cordova.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
