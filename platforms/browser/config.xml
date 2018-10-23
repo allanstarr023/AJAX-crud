@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.ajaxcrud" version="1.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>ajaxcrud</name>
+    <description>Arima SDA App</description>
+    <author email="allanadimoolah@gmail.com" href="http://arimasda.org">Allan Adimoolah</author>
+    <access origin="http://arimasda.org/*" />
+    <access origin="https://arimasda.org/*" />
+    <access origin="http://arimasda.org/feed" />
+    <access origin="https://arimasda.org/feed" />
+    <access origin="http://localhost/*" />
+    <access origin="http://localhost/login" />
+    <access origin="http://localhost/demo/" />
+    <access origin="http://localhost/demo/*" />
+    <access origin="http://localhost/demo/api" />
+    <access origin="http://localhost/demo/api/*" />
+    <access origin="https://arimasda.org/demo" />
+    <access origin="https://arimasda.org/demo/*" />
+    <access origin="https://arimasda.org/demo/api/*" />
+    <access origin="https://arimasda.org/api" />
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <gap:plugin name="onesignal-cordova-plugin" source="npm" spec="^2.4.1" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="android-minSdkVersion" value="18" />
+    <meta-data name="com.onesignal.NotificationAccentColor.DEFAULT" value="FF9900FF" />
+    <resources>
+        <color name="onesignal_bgimage_notif_title_color">#FFFF0000</color>
+        <color name="onesignal_bgimage_notif_body_color">#FF00FF00</color>
+        <string name="onesignal_bgimage_notif_image_align">right</string>
+    </resources>
+    <icon src="icon.png" />
+    <access origin="*" />
+    <access origin="content:///*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>

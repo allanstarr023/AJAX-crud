@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below.  -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+	<link rel="stylesheet" type="text/css" href="css/themes/bootstrap.min.united.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Arima SDA Mobile</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top  always-open">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">Arima SDA Mobile App</a>
+		</div>
+
+		<div class="collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+			<li><a href="pages/announcements.html">Announcements</a></li>
+			<li><a href="pages/sabbath-school.html">Sabbath School</a></li>
+			<li><a href="pages/beliefs.html">Beliefs</a></li>
+			<li><a href="pages/about-us.html">About Us</a></li>
+			<li><a href="pages/contact-us.html">Contact Us</a></li>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Departments <span class="caret"></span></a>
+			  <ul class="dropdown-menu" role="menu">
+				<li><a href="pages/adventist-youth.html">Adventist Youth</a></li>
+				<li><a href="pages/mens-ministry.html">Mens Ministry</a></li>
+				<li><a href="pages/womens-ministry.html">Womens Ministry</a></li>
+				<li><a href="pages/personal-ministry.html">Personal Ministry</a></li>
+				<li><a href="pages/family-life.html">Family Life</a></li>
+				<li><a href="pages/childrens-department.html">Childrens Department</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		  <form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		  </form>
+		</div>
+	  </div>
+	</nav>
+	
+
+<!--     <div class="container text-center">
+		<h1>Arima SDA</h1>
+		<p class="lead">Welcome To Our Mobile App</p>
+		<div class="row">
+			<div class="col-md4">
+				<div class="well well-bg-color">
+					<i class="fa fa-building"></i>
+					<h3>Come Worship with Us</h3>
+					<p>We at Arima SDA are preparing the world for the return of JESUS Christ. Arima Seventh Day Adventist Church exists to nurture and train its members to live and touch lives as Jesus lived.</p>
+				</div>
+			</div>
+			<div class="col-md4">
+				<div class="well well-bg-color">
+					<i class="fa fa-user"></i>
+					<h3>Looking for meaning in your Life</h3>
+					<p>Let us share the news of the Great and Loving God of Heaven! Join us for Sabbath Service, Adventist Youth Worship, Sunday Evening Worship or Wednesday Evening Worship.</p>
+				</div>
+			</div>
+			<div class="col-md4">
+				<div class="well well-bg-color">
+					<i class="fa fa-book"></i>
+					<h3>Our Beliefs are rooted in the Scriptures</h3>
+					<p>Seventh-day Adventists can truly be regarded as a worldwide family of Christian believers. We have 28 fundamental beliefs that are paramount to our faith.</p>
+				</div>
+			</div>	
+			<div class="col-md4">
+				<div class="well well-bg-color">
+					<i class="fa fa-user"></i>
+					<h3>Looking for meaning in your Life</h3>
+					<p>Let us share the news of the Great and Loving God of Heaven! Join us for Sabbath Service, Adventist Youth Worship, Sunday Evening Worship or Wednesday Evening Worship.</p>
+				</div>
+			</div>
+			<div class="col-md4">
+				<div class="well well-bg-color">
+					<i class="fa fa-book"></i>
+					<h3>Our Beliefs are rooted in the Scriptures</h3>
+					<p>Seventh-day Adventists can truly be regarded as a worldwide family of Christian believers. We have 28 fundamental beliefs that are paramount to our faith.</p>
+				</div>
+			</div>				
+		</div>
+    </div> -->
+	<div class="container">
+		<div class="row">
+		    <div class="col-lg-12 margin-tb">					
+		        <div class="pull-left">
+		            <h2>PHP Jquery Ajax CRUD Example</h2>
+		        </div>
+		        <div class="pull-right">
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#create-item">
+					  Create Item
+				</button>
+		        </div>
+		    </div>
+		</div>
+
+		<table class="table table-bordered">
+			<thead>
+			    <tr>
+				<th>Title</th>
+				<th>Description</th>
+				<th width="200px">Action</th>
+			    </tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+
+		<ul id="pagination" class="pagination-sm"></ul>
+
+		<!-- Create Item Modal -->
+		<div class="modal fade" id="create-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Create Item</h4>
+		      </div>
+		      <div class="modal-body">
+		      		<!--<form data-toggle="validator" action-data="api/create.php" method="POST">-->
+		      			<div class="form-group">
+							<label class="control-label" for="title">Title:</label>
+							<input type="text" name="title" class="form-control" data-error="Please enter title." required />
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="title">Description:</label>
+							<textarea name="description" class="form-control" data-error="Please enter description." required></textarea>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn crud-submit btn-success">Submit</button>
+						</div>
+		      		<!--</form>-->
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Edit Item Modal -->
+		<div class="modal fade" id="edit-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Edit Item</h4>
+		      </div>
+		      <div class="modal-body">
+		      		<form data-toggle="validator" action="api/update.php" method="put">
+		      			<input type="" name="id" class="edit-id">
+		      			<div class="form-group">
+							<label class="control-label" for="title">Title:</label>
+							<input type="text" name="title" class="form-control" data-error="Please enter title." required />
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="title">Description:</label>
+							<textarea name="description" class="form-control" data-error="Please enter description." required></textarea>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-success crud-submit-edit">Submit</button>
+						</div>
+		      		</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+	</div>
+	<footer><p class="text-center">Copyright &copy; 2018, ARIMA SDA INC</p></footer>
+    <script type="text/javascript" src="cordova.js"></script>
+	
+	<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>-->
+	
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/item-ajax.js"></script>	
+	<script type="text/javascript">
+		//var url = "http://localhost/"; //This is for localhost testing
+		var url = "https://arimasda.org/demo/";
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.3.1/jquery.twbsPagination.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+	
+<!--     </script> -->
+
+		
+</body>
+
+</html>
